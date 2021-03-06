@@ -69,6 +69,20 @@ function clickTitle() {
 function init() {
   title.style.color = BASE_COLOR;
   title.addEventListener("click", clickTitle);
+  //title.addEventListener("mouseenter", clickTitle);
 }
 
 init();
+
+//test offline event__ hard to test.. why not working?
+
+function handleOffline() {
+  console.log("Bye bye");
+}
+
+function handleOnline() {
+  console.log("Welcome back");
+}
+
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handleOnline);
