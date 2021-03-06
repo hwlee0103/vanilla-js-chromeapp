@@ -72,5 +72,3 @@ function init() {
 }
 
 init();
-
-//try again git config
