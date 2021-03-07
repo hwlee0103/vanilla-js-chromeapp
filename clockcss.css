@@ -2,6 +2,19 @@ body {
   background-color: lightpink;
 }
 
-h1 {
+.btn {
+  cursor: pointer;
+}
+
+body {
   color: rgba(68, 196, 255, 0.911);
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
 }
