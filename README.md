@@ -6,6 +6,30 @@ js_ch1
 
 - 가장 기본적인 Javascript 문법
 
-js_ch2
+ch2
 
-- function 다루기 시작
+- function 다루기
+- events 만들기
+- function과 event 활용
+
+clock
+
+- 실시간으로 시간 받아와서 표시해보기
+- user greeting 화면 만들기
+
+images
+
+- 배경이미지들
+- 무료 이미지 사이트에서 다운로드
+
+todolist
+
+- to do list 추가하기
+- to do list 저장하기
+- to do list list-up 하기
+
+weather
+
+- user 위치 받아오기 - geolocation
+- 위치를 바탕으로 weather API 호출
+- 날씨 정보 받아오기
