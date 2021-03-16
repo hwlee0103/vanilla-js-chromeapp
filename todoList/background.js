@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
 
-const IMG_NUMBER = 5;
+const IMG_NUMBER = 10;
 
 /*
 //required if we were using api
@@ -10,7 +10,7 @@ function handleImgLoad() {
 */
 function paintImage(imgNumber) {
   const image = new Image();
-  image.src = `images/${imgNumber + 1}.jpg`;
+  image.src = `../images/${imgNumber + 1}.jpg`;
   image.classList.add("bgImage");
   body.appendChild(image);
   //required if we were using api

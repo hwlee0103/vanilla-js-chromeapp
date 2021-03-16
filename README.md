@@ -1,6 +1,6 @@
-vanilla-js-chromeapp
+#vanilla-js-chromeapp
 
-Learning basic of vanilla javascript
+#Learning basic of vanilla javascript
 
 js_ch1
 
@@ -27,9 +27,14 @@ todolist
 - to do list 추가하기
 - to do list 저장하기
 - to do list list-up 하기
+- clock의 greetings가 필요
 
 weather
 
 - user 위치 받아오기 - geolocation
 - 위치를 바탕으로 weather API 호출
 - 날씨 정보 받아오기
+
+background
+
+- 배경 이미지 랜덤으로 노출 설정

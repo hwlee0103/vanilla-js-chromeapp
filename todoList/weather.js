@@ -1,3 +1,4 @@
+//import data from "../secrets.js";
 import data from "../secrets.js";
 const weather = document.querySelector(".js-weather");
 
