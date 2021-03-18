@@ -9,8 +9,6 @@ let nowResult = 0;
 let nowOperator = "";
 let nowClickedNum = 0;
 
-const RES = "Result";
-
 function operation() {
   if (nowOperator === "+") {
     nowResult = nowResult + nowClickedNum;
@@ -18,11 +16,13 @@ function operation() {
     nowResult = nowResult - nowClickedNum;
   } else if (nowOperator === "*") {
     nowResult = nowResult * nowClickedNum;
-  } else {
+  } else if (nowOperator === "/") {
     nowResult = nowResult / nowClickedNum;
   }
-  nowOperator = "";
   showResult(nowResult);
+  nowResult = 0;
+  nowClickedNum = 0;
+  nowOperator = "";
 }
 
 function opClick(event) {
@@ -33,10 +33,17 @@ function opClick(event) {
 function numClick(event) {
   const nowClicked = event.target;
   if (nowOperator === "") {
-    nowResult = parseInt(nowClicked.innerText);
+    nowClickedNum = 0;
+    nowResult =
+      nowResult === 0
+        ? parseInt(nowClicked.innerText)
+        : nowResult * 10 + parseInt(nowClicked.innerText);
     showResult(nowResult);
   } else {
-    nowClickedNum = parseInt(nowClicked.innerText);
+    nowClickedNum =
+      nowClickedNum === 0
+        ? parseInt(nowClicked.innerText)
+        : nowClickedNum * 10 + parseInt(nowClicked.innerText);
     showResult(nowClickedNum);
   }
 }
@@ -47,6 +54,8 @@ function showResult(num) {
 
 function initializeResult() {
   nowResult = 0;
+  nowClickedNum = 0;
+  nowOperator = "";
   showResult(nowResult);
 }
 
