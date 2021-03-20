@@ -66,3 +66,13 @@ background
 - 배경 이미지 랜덤으로 노출 설정
 - Math.floor()
 - Math.random() \* n
+
+calculator
+
+- html & css로 calculator 디자인
+- javascript로 계산기 기능 설계
+- 버튼 클릭 동작 - addEventListener
+  - html과 css로 버튼 배열
+    - 숫자 버튼 배열 css로 순서 정할 수 있음
+    - 현재는 그냥 html로 배열 (2021.03.18)
+  - class, id로 묶어 js동작 설계
