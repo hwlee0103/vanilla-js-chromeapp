@@ -1,4 +1,4 @@
-import data from "secrets";
+import data from "./secrets";
 const weather = document.querySelector(".js-weather");
 
 const API_KEY = data.SECRET_KEY;
