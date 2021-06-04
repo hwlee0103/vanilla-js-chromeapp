@@ -76,7 +76,3 @@ calculator
     - 숫자 버튼 배열 css로 순서 정할 수 있음
     - 현재는 그냥 html로 배열 (2021.03.18)
   - class, id로 묶어 js동작 설계
-
-====2021 update 예정====
-
-1. Basic JS
